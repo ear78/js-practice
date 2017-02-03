@@ -1,4 +1,6 @@
+
 "use strict"
+
     var el1 = document.getElementById('element1');
     el1.addEventListener('mouseover', function(){
         el1.style.cursor = 'pointer';
@@ -26,3 +28,15 @@
         el3.style.transition = ('all .5s ease');
         el3.classList.remove('blue-text');
     });
+
+    var item = document.getElementsByTagName('li');
+    for(var i = 0; i < item.length; i++){
+        item[i].addEventListener('mouseover',function(){
+            this.style.cursor = ('pointer');
+            this.style.transition = ('all .5s ease');
+            this.classList.add('red-text');
+        })
+        item[i].addEventListener('mouseout', function(){
+                this.classList.remove('red-text');
+        })
+    }

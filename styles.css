@@ -1,0 +1,12 @@
+
+.red-text {
+    color: red;
+}
+
+.blue-text {
+    color: lightblue;
+}
+
+li {
+    display: inline-block;
+}
